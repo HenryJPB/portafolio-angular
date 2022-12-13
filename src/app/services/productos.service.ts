@@ -12,13 +12,15 @@ export class ProductosService {
   productos: Producto[] = [];  
 
   constructor( private http: HttpClient ) {
-    this.CargarProductos() 
+    this.cargarProductos() 
   }
 
-  private CargarProductos() {
+  private cargarProductos() {
     this.http.get('https://angular-html-4a1ec-default-rtdb.firebaseio.com/productos_idx.json')
-      .subscribe( ( resp: Producto ) =>{
+      //.subscribe( ( resp: Producto ) =>{
+        .subscribe( ( resp: any ) =>{
           console.log(resp);
+          this.productos = resp;  
           this.cargando = false;    
       }  );  
 
