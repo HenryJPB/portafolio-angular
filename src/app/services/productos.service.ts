@@ -20,10 +20,13 @@ export class ProductosService {
       //.subscribe( ( resp: Producto ) =>{
         .subscribe( ( resp: any ) =>{
           console.log(resp);
-          this.productos = resp;  
-          this.cargando = false;    
+          this.productos = resp; 
+          this.cargando = false;
+          /*  Probar mi loading animated
+          setTimeout( () => {
+             this.cargando = false;
+            }, 2000 );   
+             */ 
       }  );  
-
   }
-
 }

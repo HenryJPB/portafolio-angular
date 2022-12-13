@@ -1,3 +1,13 @@
+/*
+  SVG Loading animado; 
+  https://codepen.io/Klerith/pen/RZpwKm
+*/
+svg path,
+svg rect{
+  fill: black;
+}
+
+/* Animaciones */
 /* You can add global styles to this file, and also import other style files */
 .animate__animated {
     -webkit-animation-duration: 11s;

@@ -9,7 +9,7 @@ import { ItemComponent } from './pages/item/item.component';
 const appRoutes : Routes = [
     { path: '', component: PortafolioComponent },
     { path: 'about', component: AboutComponent }, 
-    { path: 'item', component: ItemComponent }, 
+    { path: 'item/:id', component: ItemComponent },    // Where :id = proddductoId 
     { path: '**', pathMatch: 'full', redirectTo: '' }
 ];   
 
